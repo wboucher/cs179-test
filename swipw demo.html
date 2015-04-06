@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>swipe demo</title>
+  <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="swipw demo.css">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<script>
+  $(function(){
+  // Bind the swipeHandler callback function to the swipe event on div.box
+  $( "div.box" ).on( "swipe", colorChanger );
+ 
+  // Callback function references the event target and adds the 'swipe' class to it
+  function colorChanger( event ){
+    $( event.target ).toggleClass( "change-color" );
+  }
+});
+
+</script>
+<body>
+ 
+<h3>Swipe the rectangle to change its color:</h3>
+<div class="box"></div>
+ 
+
+</body>
+</html>
