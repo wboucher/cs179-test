@@ -3,7 +3,7 @@ html, .ui-mobile, .ui-mobile body {
   height: 105px;
 }
 .ui-mobile, .ui-mobile .ui-page {
-  min-height: 105px;
+  min-height: 100px;
 }
 #nav {
   font-size: 200%;
